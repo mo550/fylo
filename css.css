@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  background: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+/* Start Navigation */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(217, 28%, 15%);
+  padding: 55px 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navigation img {
+  max-width: 100%;
+}
+
+.navigation ul li {
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.navigation ul li:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* End Navigation */
+
+/* Start Intro */
+
+.intro {
+  flex-direction: column;
+  background: hsl(217, 28%, 15%);
+  background-image: url(images/bg-curvy-desktop.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 35px 0;
+}
+
+.intro-disc {
+  flex-direction: column;
+  margin: 40px 40px;
+}
+
+.intro-disc h1 {
+  font-size: 40px;
+}
+.intro-disc p {
+  line-height: 1.7;
+}
+
+.intro-disc h1,
+.intro-disc p {
+  text-align: center;
+  margin: 15px 0;
+}
+
+/* End Intro */
+
+/* Start Categories */
+
+.categories {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.categories h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* End Categories */
+
+/* Start About-Us */
+
+.about-us {
+  display: grid;
+  grid-template: auto / repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  gap: 10px;
+}
+
+.about-us div {
+  padding: 0 50px;
+}
+
+.about-us div h1 {
+  margin: 20px 0;
+  font-size: 30px;
+}
+
+.about-us div p {
+  margin-bottom: 25px;
+}
+
+.about-us button {
+  position: relative;
+  color: hsl(198, 60%, 50%);
+  text-decoration: underline;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-us button img {
+  position: absolute;
+  right: -25px;
+}
+
+.about-us button:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+/* End About-Us */
+
+/* Start Team */
+
+.team {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template: auto / repeat(3, minmax(100px, 350px));
+  gap: 30px;
+  margin-top: 150px;
+  padding-top: 35px;
+  background-image: url(images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-position-x: 110px;
+}
+
+.team div {
+  background: hsl(217, 28%, 15%);
+  border-radius: 5px;
+}
+
+.team p {
+  font-size: 14px;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+
+.team-info {
+  display: flex;
+  padding: 25px 30px;
+}
+.team-info p {
+  margin-left: 10px;
+  padding: 0;
+  font-size: 9px;
+}
+
+.team-info img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* End Team */
+
+/* Start Email */
+
+form {
+  position: relative;
+  bottom: -220px;
+  width: 700px;
+  text-align: center;
+  background: hsl(217, 28%, 15%);
+  padding: 30px;
+  margin: 100px auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 1px rgb(10, 10, 10);
+  z-index: 1;
+}
+
+form h1 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+.email input {
+  width: 400px;
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
+
+/* End Email */
+
+/* Start Footer */
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background: hsl(216, 53%, 9%);
+  padding-top: 19em;
+  padding-bottom: 9em;
+  font-size: 14px;
+}
+
+footer p {
+  margin-left: 30px;
+}
+
+footer img[alt="logo"] {
+  position: absolute;
+  top: 195px;
+}
+
+footer img[alt="location"] {
+  margin-left: -30px;
+  padding-right: 17px;
+  position: absolute;
+  top: 270px;
+}
+
+footer ul li {
+  margin-bottom: 15px;
+  list-style: none;
+  cursor: pointer;
+}
+
+footer ul li img {
+  position: relative;
+  top: 3px;
+  margin-right: 15px;
+}
+
+footer ul li:hover {
+  font-weight: bold;
+}
+
+footer a {
+  font-size: 25px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 8px;
+  margin-left: 5px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: hsl(176, 68%, 64%);
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.copyright span:hover {
+  font-size: 18px;
+  color: hsl(176, 68%, 64%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* End Footer */
+
+/* Start Page Buttons */
+
+button[type="submit"] {
+  width: 210px;
+  background: hsl(198, 60%, 50%);
+  color: hsl(0, 0%, 100%);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: hsl(176, 68%, 64%);
+}
+
+/* End Page Buttons */
+
+.intro img,
+img {
+  max-width: 100%;
+}
+
+/* Start Media */
+
+@media (min-width: 375px) and (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .navigation img {
+    max-width: 90px;
+  }
+  .navigation {
+    padding: 35px 30px;
+  }
+  .navigation ul li {
+    font-size: 14px;
+    padding: 5px;
+    margin-left: 5px;
+  }
+
+  .intro img {
+    padding: 0 25px;
+  }
+
+  .intro-disc h1 {
+    font-size: 25px;
+  }
+
+  .categories {
+    display: grid;
+    grid-template: repeat(4, auto) / auto;
+    padding: 0 15px;
+  }
+
+  .about-us {
+    display: grid;
+    grid-template: repeat(2, auto) / auto;
+    padding: 0 30px;
+  }
+
+  .about-us div {
+    padding: 0 10px;
+  }
+  .about-us div h1 {
+    font-size: 18px;
+  }
+  .about-us div p {
+    font-size: 16px;
+  }
+  .about-us button {
+    font-size: 20px;
+  }
+  .about-us button img {
+    width: 25px;
+    right: -35px;
+  }
+
+  .team {
+    display: grid;
+    grid-template: repeat(3, auto) / auto;
+    padding: 0 25px;
+  }
+
+  .team p {
+    font-size: 18px;
+  }
+
+  .team-info img {
+    width: 50px;
+    height: 50px;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  form h1 {
+    font-size: 20px;
+  }
+
+  .email input {
+    width: 100%;
+  }
+  .email button {
+    min-width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+
+  footer div {
+    margin-bottom: 35px;
+  }
+
+  footer div:last-child {
+    margin: 30px auto;
+  }
+}
+
+/* End Media */
+
+/* Start FrameWorks */
+
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End FrameWorks */
